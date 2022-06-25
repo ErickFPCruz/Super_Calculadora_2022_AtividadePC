@@ -9,7 +9,12 @@ Subtração [-]
 Multiplicação [*]
 Divisão [/]
 Exponenciação [E]
-Radiciação [R]");
+Radiciação [R]
+Área de um círculo [AC]
+Comprimento de um círculo [CC]
+Volume de um cilindro [VC]
+Logaritmo [LOG]
+Logaritmo Natural [LN]");
 
 Console.WriteLine();
 
@@ -19,131 +24,52 @@ opEscolhida = Console.ReadLine()!;
 switch (opEscolhida)
 
 {
-    case "+":
+    case "+" or "a":
+        Aritmetica.Soma();
+        break;
 
-    {double nr1, nr2, resultado;
+    case "-" or "s":
+        Aritmetica.Diferenca();
+        break;
 
-    Console.WriteLine("Digite os valores: ");
-    
-    nr1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"1° número = {nr1}");
+    case "*" or "m":
+        Aritmetica.Produto();
+        break;
 
-    nr2 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"2° número = {nr2}");
+    case "/" or "d":
+        Aritmetica.Quociente();
+        break;
 
-    resultado = nr1 + nr2;
-    Console.WriteLine($"Total = {resultado}");
+    case "E" or "e":
+        Aritmetica.Potencia();
+        break;
 
-    Console.ReadKey();
-    break;}
+    case "R" or "r":
+        Aritmetica.Raiz();
+        break;
 
-    case "-":
+    case "AC" or "ac":
+        Aritmetica.AreaCirculo();
+        break;
 
-    {double nr1, nr2, resultado;
+    case "CC" or "cc":
+        Aritmetica.ComprimentoCirculo();
+        break;
 
-    Console.WriteLine("Digite os valores: ");
-    
-    nr1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"1° número = {nr1}");
+    case "VC" or "vc":
+        Aritmetica.VolumeCilindro();
+        break;
 
-    nr2 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"2° número = {nr2}");
+    case "LOG" or "log":
+        Aritmetica.Log();
+        break;
 
-    resultado = nr1 - nr2;
-    Console.WriteLine($"Total = {resultado}");
-
-    Console.ReadKey();
-    break;}
-
-    case "*":
-
-    {double nr1, nr2, resultado;
-
-    Console.WriteLine("Digite os valores: ");
-    
-    nr1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"1° número = {nr1}");
-
-    nr2 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"2° número = {nr2}");
-
-    resultado = nr1 * nr2;
-    Console.WriteLine($"Total = {resultado}");
-
-    Console.ReadKey();
-    break;}
-
-    case "/":
-
-    {double nr1, nr2, resultado;
-
-    Console.WriteLine("Digite os valores: ");
-    
-    nr1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"1° número = {nr1}");
-
-    nr2 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"2° número = {nr2}");
-
-        if (nr2 == 0)
-        {
-            Console.WriteLine("Não existe divisão por 0... Tente novamente...");
-        }
-
-        else
-        {
-            resultado = nr1 / nr2;
-            Console.WriteLine($"Total = {resultado}");
-        }
-
-    Console.ReadKey();
-    break;}
-
-    case "E":
-
-    {double nr1, nr2, resultado;
-
-    Console.WriteLine("Digite os valores: ");
-    
-    nr1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"Base = {nr1}");
-
-    nr2 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"Expoente = {nr2}");
-
-    resultado = Math.Pow(nr1, nr2);
-    Console.WriteLine($"Total = {resultado}");
-
-    Console.ReadKey();
-    break;}
-
-    case "R":
-    {double nr1, nr2, resultado;
-
-    Console.WriteLine("Digite os valores: ");
-    
-    nr1 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"Base = {nr1}");
-
-    nr2 = Convert.ToDouble(Console.ReadLine());
-    Console.WriteLine($"Raiz = {nr2}");
-
-    if (nr2 == 0)
-        {
-            Console.WriteLine("Não existe divisão por 0... Tente novamente...");
-        }
-
-        else
-        {
-            resultado = Math.Pow(nr1, 1 / nr2);
-            Console.WriteLine($"Total = {resultado}");
-        }
-
-    Console.ReadKey();
-    break;}
+    case "LN" or "ln":
+        Aritmetica.Ln();
+        break;
 
     default:
 
-    Console.WriteLine("Selecione uma das teclas indicadas no menu.");
-    break;
+        Console.WriteLine("Selecione uma das teclas indicadas no menu.");
+        break;
 }
