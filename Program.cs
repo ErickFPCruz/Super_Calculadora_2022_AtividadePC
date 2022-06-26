@@ -26,50 +26,50 @@ switch (opEscolhida)
 {
     case "+" or "a":
         Aritmetica.Soma();
-        break;
+        return;
 
     case "-" or "s":
         Aritmetica.Diferenca();
-        break;
+        return;
 
     case "*" or "m":
         Aritmetica.Produto();
-        break;
+        return;
 
     case "/" or "d":
         Aritmetica.Quociente();
-        break;
+        return;
 
     case "E" or "e":
         Aritmetica.Potencia();
-        break;
+        return;
 
     case "R" or "r":
         Aritmetica.Raiz();
-        break;
+        return;
 
     case "AC" or "ac":
         Aritmetica.AreaCirculo();
-        break;
+        return;
 
     case "CC" or "cc":
         Aritmetica.ComprimentoCirculo();
-        break;
+        return;
 
     case "VC" or "vc":
         Aritmetica.VolumeCilindro();
-        break;
+        return;
 
     case "LOG" or "log":
         Aritmetica.Log();
-        break;
+        return;
 
     case "LN" or "ln":
         Aritmetica.Ln();
-        break;
+        return;
 
     default:
 
         Console.WriteLine("Selecione uma das teclas indicadas no menu.");
-        break;
+        return;
 }

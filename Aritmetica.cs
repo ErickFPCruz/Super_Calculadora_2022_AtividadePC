@@ -6,14 +6,14 @@ public class Aritmetica
 
         Console.WriteLine("\nSoma");
 
-        Console.Write($"1° parcela = ");
+        Console.Write("1° parcela = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write($"2° parcela = ");
+        Console.Write("2° parcela = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = nr1 + nr2;
-        Console.WriteLine($"\nTotal = {resultado}");
+        Console.WriteLine($"\nTotal = {resultado:N4}");
 
         Console.ReadKey();
         return;
@@ -24,14 +24,14 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.Write($"Minuendo = ");
+        Console.Write("Minuendo = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.Write($"Subtraendo = ");
+        Console.Write("Subtraendo = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = nr1 - nr2;
-        Console.WriteLine($"\nTotal = {resultado}");
+        Console.WriteLine($"\nTotal = {resultado:N4}");
 
         Console.ReadKey();
         return;
@@ -42,14 +42,14 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
+        Console.Write("1° fator = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine($"1° fator = {nr1}");
 
+        Console.Write("2° fator = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
-        Console.WriteLine($"2° fator = {nr2}");
 
         resultado = nr1 * nr2;
-        Console.WriteLine($"\nTotal = {resultado}");
+        Console.WriteLine($"\nTotal = {resultado:N4}");
 
         Console.ReadKey();
         return;
@@ -60,10 +60,10 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Dividendo = ");
+        Console.Write("Dividendo = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine($"Divisor = ");
+        Console.Write("Divisor = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         if (nr2 == 0)
@@ -74,7 +74,7 @@ public class Aritmetica
         else
         {
             resultado = nr1 / nr2;
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
 
         Console.ReadKey();
@@ -86,14 +86,14 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Base = ");
+        Console.Write("Base = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine($"Expoente = ");
+        Console.Write("Expoente = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = Math.Pow(nr1, nr2);
-        Console.WriteLine($"\nTotal = {resultado}");
+        Console.WriteLine($"\nTotal = {resultado:N4}");
 
         Console.ReadKey();
         return;
@@ -104,10 +104,10 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Base = ");
+        Console.Write("Base = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine($"Índice = ");
+        Console.Write("Índice = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         if (nr2 == 0)
@@ -123,7 +123,7 @@ public class Aritmetica
         else
         {
             resultado = Math.Pow(nr1, 1 / nr2);
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
 
         Console.ReadKey();
@@ -135,7 +135,7 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Raio = ");
+        Console.Write("Raio = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
         if (nr1 <= 0)
@@ -146,7 +146,7 @@ public class Aritmetica
         else
         {
             resultado = Math.PI * Math.Pow(nr1, 2);
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
     }
     public static void ComprimentoCirculo()
@@ -155,7 +155,7 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Raio = ");
+        Console.Write("Raio = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
         if (nr1 <= 0)
@@ -166,7 +166,7 @@ public class Aritmetica
         else
         {
             resultado = 2 * Math.PI * nr1;
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
     }
     public static void VolumeCilindro()
@@ -175,10 +175,10 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Raio = ");
+        Console.Write("Raio = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine($"Altura = ");
+        Console.Write("Altura = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         if (nr1 <= 0)
@@ -194,7 +194,7 @@ public class Aritmetica
         else
         {
             resultado = Math.PI * Math.Pow(nr1, 2) * nr2;
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
     }
     public static void Log()
@@ -203,10 +203,10 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Logaritmando = ");
+        Console.Write("Logaritmando = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
-        Console.WriteLine($"Base Log. = ");
+        Console.Write("Base Log. = ");
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         if (nr1 <= 0)
@@ -227,7 +227,7 @@ public class Aritmetica
         else
         {
             resultado = Math.Log(nr1, nr2);
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
     }
     public static void Ln()
@@ -236,18 +236,18 @@ public class Aritmetica
 
         Console.WriteLine("Digite os valores: ");
 
-        Console.WriteLine($"Logaritmando = ");
+        Console.Write("Logaritmando = ");
         nr1 = Convert.ToDouble(Console.ReadLine());
 
         if (nr1 <= 0)
         {
-            Console.WriteLine("Tente novamente...");
+            Console.WriteLine("O Logaritmando precisa ser positivo! Tente novamente...");
         }
 
         else
         {
             resultado = Math.Log(nr1, Math.E);
-            Console.WriteLine($"\nTotal = {resultado}");
+            Console.WriteLine($"\nTotal = {resultado:N4}");
         }
     }
 }
