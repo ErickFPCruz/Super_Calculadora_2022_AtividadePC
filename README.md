@@ -30,4 +30,4 @@ Página do GitHub: [Perfil de ErickFPCruz](https://github.com/ErickFPCruz)
 
 Repositório do Projeto: [Super Calculadora 1°/2022](https://github.com/ErickFPCruz/Super_Calculadora_2022_AtividadePC)
 
-Link para o _download_ do programa: [Baixe o programa aqui](https://github.com/ErickFPCruz/Super_Calculadora_2022_AtividadePC/raw/main/Arquivos%20para%20o%20Funcionamento%20da%20Super%20Calculadora.zip)
+Link para o _download_ do programa: [Baixe o programa neste link aqui](https://github.com/ErickFPCruz/Super_Calculadora_2022_AtividadePC/raw/main/Arquivos%20para%20o%20Funcionamento%20da%20Super%20Calculadora.zip)
