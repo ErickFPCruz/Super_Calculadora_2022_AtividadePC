@@ -1,4 +1,4 @@
-# Eis a Super Calculadora ➕➖✖️➗
+# Eis a Super Calculadora ➕➖❌➗
 
 Se você quer fazer contas difíceis de forma mais rápida, esta é a ferramenta certa!
 
