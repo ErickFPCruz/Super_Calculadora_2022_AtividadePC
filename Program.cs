@@ -1,8 +1,10 @@
-﻿Console.Clear();
+﻿//Console.Clear();
 
 string opEscolhida;
 
-Console.WriteLine(@"Escolha uma operação para efetuar:
+do
+{
+    Console.WriteLine(@"Escolha uma operação para efetuar:
                     
 Adição [+]
 Subtração [-]
@@ -14,62 +16,69 @@ Radiciação [R]
 Comprimento de um círculo [CC]
 Volume de um cilindro [VC]
 Logaritmo [LOG]
-Logaritmo Natural [LN]");
+Logaritmo Natural [LN]
+Sair [0]");
 
-Console.WriteLine();
+    Console.WriteLine();
 
-Console.Write("Qual a operação que será feita? ");
-opEscolhida = Console.ReadLine()!;
+    Console.Write("Qual a operação que será feita? ");
+    opEscolhida = Console.ReadLine()!;
 
-switch (opEscolhida)
+    switch (opEscolhida)
 
-{
-    case "+" or "a":
-        Aritmetica.Soma();
-        return;
+    {
+        case "+" or "a":
+            Aritmetica.Soma();
+            break;
 
-    case "-" or "s":
-        Aritmetica.Diferenca();
-        return;
+        case "-" or "s":
+            Aritmetica.Diferenca();
+            break;
 
-    case "*" or "m":
-        Aritmetica.Produto();
-        return;
+        case "*" or "m":
+            Aritmetica.Produto();
+            break;
 
-    case "/" or "d":
-        Aritmetica.Quociente();
-        return;
+        case "/" or "d":
+            Aritmetica.Quociente();
+            break;
 
-    case "E" or "e":
-        Aritmetica.Potencia();
-        return;
+        case "E" or "e":
+            Aritmetica.Potencia();
+            break;
 
-    case "R" or "r":
-        Aritmetica.Raiz();
-        return;
+        case "R" or "r":
+            Aritmetica.Raiz();
+            break;
 
-    case "AC" or "ac":
-        Aritmetica.AreaCirculo();
-        return;
+        case "AC" or "ac":
+            Aritmetica.AreaCirculo();
+            break;
 
-    case "CC" or "cc":
-        Aritmetica.ComprimentoCirculo();
-        return;
+        case "CC" or "cc":
+            Aritmetica.ComprimentoCirculo();
+            break;
 
-    case "VC" or "vc":
-        Aritmetica.VolumeCilindro();
-        return;
+        case "VC" or "vc":
+            Aritmetica.VolumeCilindro();
+            break;
 
-    case "LOG" or "log":
-        Aritmetica.Log();
-        return;
+        case "LOG" or "log":
+            Aritmetica.Log();
+            break;
 
-    case "LN" or "ln":
-        Aritmetica.Ln();
-        return;
+        case "LN" or "ln":
+            Aritmetica.Ln();
+            break;
 
-    default:
+        case "0":
+            return;
 
-        Console.WriteLine("Selecione uma das teclas indicadas no menu.");
-        return;
-}
+        default:
+
+            Console.WriteLine("Selecione uma das teclas indicadas no menu.");
+            break;
+    }
+
+    Console.ReadKey();
+} while (opEscolhida != "0");

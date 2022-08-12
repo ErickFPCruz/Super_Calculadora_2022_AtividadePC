@@ -13,9 +13,8 @@ public class Aritmetica
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = nr1 + nr2;
-        Console.WriteLine($"\nTotal = {resultado:N4}");
+        Console.WriteLine($"\nTotal = {resultado:N2}");
 
-        Console.ReadKey();
         return;
     }
     public static void Diferenca()
@@ -31,9 +30,8 @@ public class Aritmetica
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = nr1 - nr2;
-        Console.WriteLine($"\nTotal = {resultado:N4}");
+        Console.WriteLine($"\nTotal = {resultado:N2}");
 
-        Console.ReadKey();
         return;
     }
     public static void Produto()
@@ -49,9 +47,8 @@ public class Aritmetica
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = nr1 * nr2;
-        Console.WriteLine($"\nTotal = {resultado:N4}");
+        Console.WriteLine($"\nTotal = {resultado:N2}");
 
-        Console.ReadKey();
         return;
     }
     public static void Quociente()
@@ -74,10 +71,9 @@ public class Aritmetica
         else
         {
             resultado = nr1 / nr2;
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
 
-        Console.ReadKey();
         return;
     }
     public static void Potencia()
@@ -93,9 +89,8 @@ public class Aritmetica
         nr2 = Convert.ToDouble(Console.ReadLine());
 
         resultado = Math.Pow(nr1, nr2);
-        Console.WriteLine($"\nTotal = {resultado:N4}");
+        Console.WriteLine($"\nTotal = {resultado:N2}");
 
-        Console.ReadKey();
         return;
     }
     public static void Raiz()
@@ -123,10 +118,9 @@ public class Aritmetica
         else
         {
             resultado = Math.Pow(nr1, 1 / nr2);
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
 
-        Console.ReadKey();
         return;
     }
     public static void AreaCirculo()
@@ -146,7 +140,7 @@ public class Aritmetica
         else
         {
             resultado = Math.PI * Math.Pow(nr1, 2);
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
     }
     public static void ComprimentoCirculo()
@@ -166,7 +160,7 @@ public class Aritmetica
         else
         {
             resultado = 2 * Math.PI * nr1;
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
     }
     public static void VolumeCilindro()
@@ -194,7 +188,7 @@ public class Aritmetica
         else
         {
             resultado = Math.PI * Math.Pow(nr1, 2) * nr2;
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
     }
     public static void Log()
@@ -227,7 +221,7 @@ public class Aritmetica
         else
         {
             resultado = Math.Log(nr1, nr2);
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
     }
     public static void Ln()
@@ -247,7 +241,7 @@ public class Aritmetica
         else
         {
             resultado = Math.Log(nr1, Math.E);
-            Console.WriteLine($"\nTotal = {resultado:N4}");
+            Console.WriteLine($"\nTotal = {resultado:N2}");
         }
     }
 }
